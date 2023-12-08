@@ -1,12 +1,12 @@
 # Containerizing a simple Flask app
 
-This is a simple Python Flask web server project that displays "Hello World!". The project includes a Dockerfile for containerization and can be hosted on an Amazon EC2 instance.
+This is a simple Python Flask web server project that displays "Hello World!". The project includes a Dockerfile for containerization and can be hosted on an Amazon EC2 Ubuntu 22.04 instance.
 
 ## Prerequisites
-- [Python3] installed on your EC2 machine
-- [python3-pip] installed on your EC2 machine
-- [Docker] installed on your EC2 machine
-- An [Amazon EC2] instance set up and running
+- An [Amazon EC2](https://aws.amazon.com/ec2) Ubuntu 22.04 instance set up and running
+- [Python3](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-programming-environment-on-an-ubuntu-20-04-server) installed on your EC2 machine
+- [Python3-pip](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-programming-environment-on-an-ubuntu-20-04-server) installed on your EC2 machine
+- [Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04) installed on your EC2 machine
 
 ## SSH into EC2
 
@@ -37,7 +37,7 @@ This is a simple Python Flask web server project that displays "Hello World!". T
     python3 app.py
     ```
 
-5. **Open your browser and go to [http://<public_ec2_ip>:8000] to see the "Hello World!" message.**
+5. **Open your browser and go to "http://<public_ec2_ip>:8000" to see the "Hello World!" message.**
 
 ## Dockerize the App
 
@@ -51,7 +51,7 @@ This is a simple Python Flask web server project that displays "Hello World!". T
     docker run -itd -p 8000:8000 flask-hello-world
     ```
 
-3. **Open your browser and go to [http://<public_ec2_ip>:8000] to see the "Hello World!" message.**
+3. **Open your browser and go to "http://<public_ec2_ip>:8000" to see the "Hello World!" message.**
 
 ## Push to Docker Hub
 
